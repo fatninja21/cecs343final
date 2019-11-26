@@ -99,12 +99,12 @@ public class Product {
 		totalSales += (qty * salePrice);
 		
 		//Set Total Profit
-		totalProfit = (totalSales - totalCost);
+		//totalProfit = (totalSales - totalCost);
 		
 		//Set Profit Percent
-		if (totalSales != 0.0){
-			this.totalProfitPercent = (totalProfit / totalSales * 100 );
-		}
+		//if (totalSales != 0.0){
+	//		this.totalProfitPercent = (totalProfit / totalSales * 100 );
+	//	}
 		
 	}
 	
