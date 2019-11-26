@@ -1,0 +1,2279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="66" type="rgb"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="mainMenuPanel" min="-2" pref="857" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Component id="CustomerPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="addCustomerPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="editCustomerPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="salesPersonPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="32767" attributes="0"/>
+              <Component id="addSalesPersonPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="editSalesPersonPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="inventoryPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="addProductPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="editInventoryPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="32767" attributes="0"/>
+              <Component id="belowQtyPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="invoicePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="addInvoicePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="editInvoicePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="openInvoicePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="32767" attributes="0"/>
+              <Component id="closedInvoicePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="productReportPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="mainMenuPanel" max="32767" attributes="0"/>
+          <Component id="addCustomerPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="CustomerPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="editCustomerPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="editSalesPersonPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="inventoryPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="belowQtyPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="invoicePanel" max="32767" attributes="0"/>
+          <Component id="addInvoicePanel" max="32767" attributes="0"/>
+          <Component id="editInvoicePanel" max="32767" attributes="0"/>
+          <Component id="addSalesPersonPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="addProductPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="openInvoicePanel" max="32767" attributes="0"/>
+          <Component id="closedInvoicePanel" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Component id="salesPersonPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Component id="productReportPanel" max="32767" attributes="0"/>
+          <Component id="editInventoryPanel" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="mainMenuPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="customerBtn" max="32767" attributes="0"/>
+                      <Component id="salesperonBtn" max="32767" attributes="0"/>
+                      <Component id="inventoryBtn" max="32767" attributes="0"/>
+                      <Component id="invoiceBtn" max="32767" attributes="0"/>
+                      <Component id="productReportBtn" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="1389" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="255" max="-2" attributes="0"/>
+                  <Component id="mainMenuLbl" min="-2" pref="434" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="1063" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="mainMenuLbl" min="-2" pref="102" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="customerBtn" min="-2" pref="74" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="salesperonBtn" min="-2" pref="85" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="inventoryBtn" min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="invoiceBtn" min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="productReportBtn" min="-2" pref="63" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="productReportBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Product Report"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="productReportBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="customerBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="customerBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="salesperonBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Salesperson"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salesperonBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="invoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Invoice"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="invoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="inventoryBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Inventory"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inventoryBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="mainMenuLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="salesPersonPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                          <Component id="salesPersonList" min="-2" pref="669" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="editSalesPersonBtn" max="32767" attributes="0"/>
+                              <Component id="addSalesPersonBtn" max="32767" attributes="0"/>
+                              <Component id="removeSalesPersonBnt" pref="205" max="32767" attributes="0"/>
+                              <Component id="slsPersonMainMenuBtn" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" pref="349" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="59" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="126" max="-2" attributes="0"/>
+                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="addSalesPersonBtn" min="-2" pref="68" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="editSalesPersonBtn" min="-2" pref="65" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="removeSalesPersonBnt" min="-2" pref="67" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="slsPersonMainMenuBtn" min="-2" pref="65" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="salesPersonList" min="-2" pref="500" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="398" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="addSalesPersonBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Add SalesPerson"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addSalesPersonBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="editSalesPersonBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit SalesPerson"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editSalesPersonBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="removeSalesPersonBnt">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Remove SalesPerson"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeSalesPersonBntActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sales Person Menu"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="slsPersonMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="slsPersonMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="salesPersonList">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="inventoryPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="inventoryList" min="-2" pref="733" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="addInventoryBtn" max="32767" attributes="0"/>
+                              <Component id="editInventoryBtn" max="32767" attributes="0"/>
+                              <Component id="removeInventoryBtn" alignment="0" pref="172" max="32767" attributes="0"/>
+                              <Component id="inventoryMainMenuBtn" alignment="0" max="32767" attributes="0"/>
+                              <Component id="inventoryBelow5Btn" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="367" max="-2" attributes="0"/>
+                          <Component id="inventoryMenuLbl" min="-2" pref="284" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="59" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="inventoryMenuLbl" min="-2" pref="132" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="addInventoryBtn" min="-2" pref="67" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="editInventoryBtn" min="-2" pref="57" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="removeInventoryBtn" min="-2" pref="55" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="inventoryMainMenuBtn" min="-2" pref="56" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="inventoryBelow5Btn" min="-2" pref="70" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="inventoryList" min="-2" pref="500" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="inventoryMenuLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Inventory Menu"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addInventoryBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Add Inventory"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addInventoryBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="editInventoryBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit Inventory"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editInventoryBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="removeInventoryBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Remove Inventory"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="inventoryMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inventoryMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="inventoryBelow5Btn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Items under 5"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inventoryBelow5BtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="inventoryList">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="addCustomerPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="customerIDLbl" min="-2" pref="70" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="addcustMainMenuBtn" min="-2" pref="135" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="addCustomerLbl" min="-2" pref="530" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="addCustFNameLbl" alignment="0" pref="107" max="32767" attributes="0"/>
+                                  <Component id="customerIDTf" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="addCustFNameTf" min="-2" pref="116" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="152" pref="152" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="addCustLNameTf" max="32767" attributes="0"/>
+                              <Component id="addCustLNameLbl" pref="110" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="355" max="-2" attributes="0"/>
+                          <Component id="cancelAddCustBtn" min="-2" pref="105" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="submitAddCustBtn" min="-2" pref="102" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="addCustSlsTaxLbl" min="-2" pref="104" max="-2" attributes="0"/>
+                              <Component id="addCustSalesTaxTf" min="-2" pref="125" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="164" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="addCustomerLbl" min="-2" pref="117" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
+                          <Component id="addcustMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Component id="customerIDLbl" min="-2" pref="32" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="customerIDTf" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="addCustFNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addCustLNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="addCustFNameTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addCustLNameTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <Component id="addCustSlsTaxLbl" min="-2" pref="32" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="addCustSalesTaxTf" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="submitAddCustBtn" pref="35" max="32767" attributes="0"/>
+                      <Component id="cancelAddCustBtn" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="addCustomerLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add Customer"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addcustMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addcustMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="customerIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="customerIDTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="addCustFNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="addCustLNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="addCustFNameTf">
+        </Component>
+        <Component class="javax.swing.JTextField" name="addCustLNameTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="addCustSlsTaxLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sales Tax"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="addCustSalesTaxTf">
+        </Component>
+        <Component class="javax.swing.JButton" name="cancelAddCustBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelAddCustBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="submitAddCustBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Submit"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submitAddCustBtnActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="editCustomerPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
+                          <Component id="editCustomerLbl" min="-2" pref="511" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="editCustSalesTaxTf" max="32767" attributes="0"/>
+                              <Component id="editCustSalesTaxLbl" max="32767" attributes="0"/>
+                              <Component id="editCustMainMenuBtn" pref="113" max="32767" attributes="0"/>
+                              <Component id="editCustomerIDLbl" max="32767" attributes="0"/>
+                              <Component id="dispCustIDInEditLbl" max="32767" attributes="0"/>
+                              <Component id="editCustFNameLbl" alignment="0" max="32767" attributes="0"/>
+                              <Component id="editCustFNameTf" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="editCustomerLNameTf" max="32767" attributes="0"/>
+                              <Component id="editCustLNameLbl" pref="130" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="129" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="cancelEditCustomer" min="-2" pref="112" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="confirmEditCustomerBtn" min="-2" pref="129" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                  <Component id="editCustomerLbl" min="-2" pref="121" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="editCustMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <Component id="editCustomerIDLbl" min="-2" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="dispCustIDInEditLbl" min="-2" pref="21" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="editCustFNameLbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="editCustLNameLbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="68" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="editCustomerLNameTf" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="editCustFNameTf" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="editCustSalesTaxLbl" min="-2" pref="27" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="editCustSalesTaxTf" min="-2" pref="36" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cancelEditCustomer" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                      <Component id="confirmEditCustomerBtn" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="543" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="editCustomerLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Edit Customer"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="editCustMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editCustMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editCustomerIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dispCustIDInEditLbl">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="ff" red="cc" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="custID goes here"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editCustFNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="editCustFNameTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="editCustLNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="editCustomerLNameTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="editCustSalesTaxLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sales Tax"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="editCustSalesTaxTf">
+        </Component>
+        <Component class="javax.swing.JButton" name="cancelEditCustomer">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelEditCustomerActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="confirmEditCustomerBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Confirm"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditCustomerBtnActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="addSalesPersonPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="238" max="-2" attributes="0"/>
+                          <Component id="addSalesPersonLbl" min="-2" pref="515" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="addSlsFNameLbl" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="addSlsFNameTf" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="addSlsCommissionTf" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="addSlsCommissionLbl" alignment="0" pref="111" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="addSlsLNameLbl" pref="106" max="32767" attributes="0"/>
+                                      <Component id="addSlsLNameTf" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="addSlsIDTf" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="addSlsIDLbl" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="addSalesPersonMainMenuBtn" alignment="0" pref="117" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="113" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="addSlsCancelBtn" min="-2" pref="126" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="addSalesPersonSubmitBtn" min="-2" pref="127" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                  <Component id="addSalesPersonLbl" min="-2" pref="107" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="addSalesPersonMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="addSlsIDLbl" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="addSlsIDTf" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="addSlsFNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addSlsLNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="addSlsFNameTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addSlsLNameTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="addSlsCommissionLbl" min="-2" pref="21" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="addSlsCommissionTf" min="-2" pref="29" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="addSalesPersonSubmitBtn" pref="41" max="32767" attributes="0"/>
+                      <Component id="addSlsCancelBtn" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="addSalesPersonLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add SalesPerson"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addSalesPersonMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addSalesPersonMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="addSlsFNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="addSlsLNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="addSlsFNameTf">
+        </Component>
+        <Component class="javax.swing.JTextField" name="addSlsLNameTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="addSlsIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="SalesPerson ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="addSlsIDTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="addSlsCommissionLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Commission"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="addSlsCommissionTf">
+        </Component>
+        <Component class="javax.swing.JButton" name="addSlsCancelBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addSlsCancelBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="addSalesPersonSubmitBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Submit"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addSalesPersonSubmitBtnActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="editSalesPersonPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="editSalesPersonMainMenuBtn" min="-2" pref="112" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="editSalesPersonLbl" min="-2" pref="630" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="editSlsPersonCommissionTf" alignment="0" max="32767" attributes="0"/>
+                              <Component id="editSlsPersonCommissionLbl" alignment="0" pref="132" max="32767" attributes="0"/>
+                              <Component id="editSlsPersonFNameLbl" max="32767" attributes="0"/>
+                              <Component id="displayCurrentSlsPersonIDLbl" alignment="0" max="32767" attributes="0"/>
+                              <Component id="editSlsPersonIDLbl" alignment="0" pref="120" max="32767" attributes="0"/>
+                              <Component id="editSlsPersonFNameTf" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="editSlsPersonLNameLbl" min="-2" pref="106" max="-2" attributes="0"/>
+                              <Component id="editSlsPersonLNameTf" min="-2" pref="138" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="123" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="cancelEditSlsPersonBtn" min="-2" pref="115" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="confirmEditSlsPersonBtn" min="-2" pref="105" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="232" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="editSalesPersonLbl" min="-2" pref="111" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
+                          <Component id="editSalesPersonMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                  <Component id="editSlsPersonIDLbl" min="-2" pref="28" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="displayCurrentSlsPersonIDLbl" min="-2" pref="24" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="editSlsPersonFNameLbl" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="editSlsPersonLNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="editSlsPersonFNameTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="editSlsPersonLNameTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="editSlsPersonCommissionLbl" min="-2" pref="26" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="editSlsPersonCommissionTf" min="-2" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="confirmEditSlsPersonBtn" pref="37" max="32767" attributes="0"/>
+                      <Component id="cancelEditSlsPersonBtn" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="editSalesPersonLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Edit SalesPerson"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="editSalesPersonMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editSalesPersonMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editSlsPersonIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="SalesPerson ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="displayCurrentSlsPersonIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="ID GOES HERE"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editSlsPersonFNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editSlsPersonLNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="editSlsPersonFNameTf">
+        </Component>
+        <Component class="javax.swing.JTextField" name="editSlsPersonLNameTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="editSlsPersonCommissionLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Commission"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="editSlsPersonCommissionTf">
+        </Component>
+        <Component class="javax.swing.JButton" name="cancelEditSlsPersonBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelEditSlsPersonBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="confirmEditSlsPersonBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Confirm"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="confirmEditSlsPersonBtnActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="addProductPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jLabel9" max="32767" attributes="0"/>
+                                      <Component id="addProdMainMenuBtn" pref="126" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="addProductLbl" min="-2" pref="582" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="addProductQtyTf" min="-2" pref="147" max="-2" attributes="0"/>
+                                              <Component id="addProductQtyLbl" min="-2" pref="147" max="-2" attributes="0"/>
+                                              <Component id="addProductSaleCostLbl" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
+                                              <Component id="addProductSaleCostTf" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Component id="addProductSalePriceLbl" alignment="0" min="-2" pref="136" max="-2" attributes="0"/>
+                              <Component id="itemNameTf" alignment="0" min="-2" pref="136" max="-2" attributes="0"/>
+                              <Component id="addProductSalePriceTf" alignment="0" min="-2" pref="146" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="412" max="-2" attributes="0"/>
+                          <Component id="cancelAddProduct" min="-2" pref="131" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="addProductSubmitBtn" min="-2" pref="128" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="162" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="addProductLbl" min="-2" pref="101" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
+                          <Component id="addProdMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addProductQtyLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="itemNameTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addProductQtyTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="addProductSalePriceLbl" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="addProductSaleCostLbl" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="addProductSalePriceTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addProductSaleCostTf" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="184" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="addProductSubmitBtn" pref="37" max="32767" attributes="0"/>
+                      <Component id="cancelAddProduct" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="615" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="addProductLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add Product"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addProdMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addProdMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Item Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="itemNameTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="addProductQtyLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Quantity"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="addProductQtyTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="addProductSalePriceLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sale Price"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="addProductSaleCostLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Product Cost"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="addProductSalePriceTf">
+        </Component>
+        <Component class="javax.swing.JTextField" name="addProductSaleCostTf">
+        </Component>
+        <Component class="javax.swing.JButton" name="cancelAddProduct">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelAddProductActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="addProductSubmitBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Submit"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addProductSubmitBtnActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="editInventoryPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="206" max="32767" attributes="0"/>
+                  <Component id="editInventoryLbl" min="-2" pref="655" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="editSaleCostTf" max="32767" attributes="0"/>
+                              <Component id="editSaleCostLbl" max="32767" attributes="0"/>
+                              <Component id="editProdNameTf" max="32767" attributes="0"/>
+                              <Component id="editInventoryMainMenuBtn" pref="123" max="32767" attributes="0"/>
+                              <Component id="editProdIDLbl" max="32767" attributes="0"/>
+                              <Component id="dispProdIDLbl" max="32767" attributes="0"/>
+                              <Component id="editProdNameLbl" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="editProdQtyLbl" min="-2" pref="98" max="-2" attributes="0"/>
+                              <Component id="editProdQtyTf" max="32767" attributes="0"/>
+                              <Component id="editBuyCostLbl" alignment="0" pref="142" max="32767" attributes="0"/>
+                              <Component id="editBuyCostTf" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="409" max="-2" attributes="0"/>
+                          <Component id="cancelEditProductBtn" min="-2" pref="128" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="cnfrmEditProdBtn" min="-2" pref="138" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <Component id="editInventoryLbl" min="-2" pref="116" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                  <Component id="editInventoryMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <Component id="editProdIDLbl" min="-2" pref="35" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="dispProdIDLbl" min="-2" pref="27" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="editProdNameLbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="editProdQtyLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="editProdNameTf" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="editProdQtyTf" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="editSaleCostLbl" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="editBuyCostLbl" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="editSaleCostTf" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="editBuyCostTf" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="cnfrmEditProdBtn" pref="53" max="32767" attributes="0"/>
+                      <Component id="cancelEditProductBtn" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="editInventoryLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Edit Inventory"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="editInventoryMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editInventoryMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editProdIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Inventory ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="dispProdIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="ID GOES HERE"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editProdNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Product Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editProdQtyLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Product Qty"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="editProdNameTf">
+        </Component>
+        <Component class="javax.swing.JTextField" name="editProdQtyTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="editSaleCostLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sale Cost"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editBuyCostLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="buy Cost"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="editSaleCostTf">
+        </Component>
+        <Component class="javax.swing.JTextField" name="editBuyCostTf">
+        </Component>
+        <Component class="javax.swing.JButton" name="cancelEditProductBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelEditProductBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cnfrmEditProdBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Confirm"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cnfrmEditProdBtnActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="belowQtyPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                          <Component id="belowQtyLbl" min="-2" pref="666" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="qtyBelowLimitList" min="-2" pref="668" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="inventoryMenuBtn" pref="200" max="32767" attributes="0"/>
+                      <Component id="belowQtyMainMenuBtn" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="79" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="belowQtyLbl" min="-2" pref="112" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="inventoryMenuBtn" min="-2" pref="85" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="belowQtyMainMenuBtn" min="-2" pref="74" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="qtyBelowLimitList" min="-2" pref="503" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="belowQtyLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Qty Below 5"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="inventoryMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Inventory Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inventoryMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="belowQtyMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="belowQtyMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="qtyBelowLimitList">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="CustomerPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                          <Component id="customerList" min="-2" pref="660" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="addCustomerBtn" max="32767" attributes="0"/>
+                              <Component id="editCustomerBtn" max="32767" attributes="0"/>
+                              <Component id="removeCustomerBtn" alignment="0" pref="216" max="32767" attributes="0"/>
+                              <Component id="custMainMenuBtn" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="318" max="-2" attributes="0"/>
+                          <Component id="customerMenuLbl" min="-2" pref="387" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="48" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                  <Component id="customerMenuLbl" min="-2" pref="130" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="addCustomerBtn" min="-2" pref="72" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="editCustomerBtn" min="-2" pref="60" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="removeCustomerBtn" min="-2" pref="68" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="custMainMenuBtn" min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                          <Component id="customerList" min="-2" pref="502" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="addCustomerBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Add Customer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addCustomerBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="editCustomerBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit Customer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editCustomerBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="removeCustomerBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Remove Customer"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeCustomerBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="customerMenuLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Customer Menu"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="custMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="custMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="customerList">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="invoicePanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" pref="709" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="invoiceList" min="-2" pref="776" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="addInvoiceBtn" max="32767" attributes="0"/>
+                      <Component id="editInvoiceBtn" max="32767" attributes="0"/>
+                      <Component id="removeInvoiceBtn" alignment="0" pref="136" max="32767" attributes="0"/>
+                      <Component id="openInvoiceBtn" max="32767" attributes="0"/>
+                      <Component id="closedInvoiceBtn" alignment="0" max="32767" attributes="0"/>
+                      <Component id="invoiceMainMenuBtn" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="63" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" pref="121" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="addInvoiceBtn" min="-2" pref="55" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="editInvoiceBtn" min="-2" pref="53" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="removeInvoiceBtn" min="-2" pref="48" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="openInvoiceBtn" min="-2" pref="50" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="closedInvoiceBtn" min="-2" pref="56" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="invoiceMainMenuBtn" min="-2" pref="53" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="invoiceList" min="-2" pref="518" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Invoice Menu"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Add Invoice"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addInvoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="editInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit Invoice"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editInvoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="removeInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Remove Invoice"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="openInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Open Invoices"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openInvoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="closedInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Closed Invoices"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closedInvoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="invoiceMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="invoiceMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="invoiceList">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="addInvoicePanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="addInvoiceMainMenuBtn" min="-2" pref="115" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="addInvoiceLbl" min="-2" pref="398" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                          <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="addProdToInvBtn" min="-2" pref="96" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="addInvoiceIDTf" min="-2" pref="105" max="-2" attributes="0"/>
+                                              <Component id="addSlsPersonLbl" min="-2" pref="105" max="-2" attributes="0"/>
+                                              <Component id="addInvoiceIDLbl" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="addCustToInvLbl" min="-2" pref="120" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="invoiceSalesPersonNameList" max="32767" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                                  <Component id="invoiceCustomerNameList" min="-2" pref="120" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="totalProductsInInvoiceTf" min="-2" pref="440" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="invoiceTotalLbl" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jLabel11" min="-2" pref="108" max="-2" attributes="0"/>
+                                                      <Component id="cancelAddInvoiceBtn" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="productInINvoiceList" min="-2" pref="271" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                                          <Component id="addProdLbl" min="-2" pref="83" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                          <Component id="submitAddInvoiceBtn" min="-2" pref="97" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="20" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="addInvoiceMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                              <Component id="addInvoiceLbl" min="-2" pref="116" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+                          <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                  <Component id="addInvoiceIDLbl" min="-2" pref="25" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="addInvoiceIDTf" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="addSlsPersonLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addCustToInvLbl" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="addProdLbl" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="productInINvoiceList" min="-2" pref="129" max="-2" attributes="0"/>
+                      <Component id="invoiceCustomerNameList" min="-2" pref="129" max="-2" attributes="0"/>
+                      <Component id="invoiceSalesPersonNameList" min="-2" pref="129" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="addProdToInvBtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="totalProductsInInvoiceTf" min="-2" pref="196" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="invoiceTotalLbl" min="-2" pref="31" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel11" min="-2" pref="31" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="193" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cancelAddInvoiceBtn" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                              <Component id="submitAddInvoiceBtn" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="addInvoiceLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add Invoice"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addInvoiceMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addInvoiceMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="addInvoiceIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Invoice ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="addInvoiceIDTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="addCustToInvLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="addSlsPersonLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="SalesPerson Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="addProdLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Product"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addProdToInvBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="add Product"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="add Shipping"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="invoiceTotalLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Total $$"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel11">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="total here"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="cancelAddInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelAddInvoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="submitAddInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Submit"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submitAddInvoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="totalProductsInInvoiceTf">
+        </Component>
+        <Component class="java.awt.List" name="invoiceSalesPersonNameList">
+        </Component>
+        <Component class="java.awt.List" name="invoiceCustomerNameList">
+        </Component>
+        <Component class="java.awt.List" name="productInINvoiceList">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="editInvoicePanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="362" max="-2" attributes="0"/>
+                          <Component id="cancelEditInvoiceBtn" min="-2" pref="90" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="updateInvoiceBtn" pref="115" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="invoiceIDTf" max="32767" attributes="0"/>
+                              <Component id="editInvoiceMainMenuBtn" pref="108" max="32767" attributes="0"/>
+                              <Component id="invoiceIDLbl" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="editCustomerNameLbl" pref="108" max="32767" attributes="0"/>
+                                      <Component id="customerCB" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="editSlsPersonNameLbl" pref="119" max="32767" attributes="0"/>
+                                      <Component id="salesPersonCB" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="editProdLbl" max="32767" attributes="0"/>
+                                      <Component id="itemCB" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="closeInvoiceBtn" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="editInvoiceLbl" min="-2" pref="331" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="241" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="editInvoiceLbl" min="-2" pref="89" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="editInvoiceMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                      <Component id="closeInvoiceBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="invoiceIDLbl" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="editCustomerNameLbl" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="editSlsPersonNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="editProdLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="invoiceIDTf" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="customerCB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="salesPersonCB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="itemCB" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cancelEditInvoiceBtn" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="updateInvoiceBtn" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="editInvoiceLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Edit Invoice"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="editInvoiceMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editInvoiceMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="invoiceIDLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Invoice ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="invoiceIDTf">
+        </Component>
+        <Component class="javax.swing.JLabel" name="editCustomerNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Customer Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editSlsPersonNameLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="SalesPerson Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="customerCB">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="salesPersonCB">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="editProdLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Item"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="itemCB">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="Item 1"/>
+                <StringItem index="1" value="Item 2"/>
+                <StringItem index="2" value="Item 3"/>
+                <StringItem index="3" value="Item 4"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="cancelEditInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelEditInvoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="updateInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Update"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateInvoiceBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="closeInvoiceBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Close Invoice"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="openInvoicePanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="326" max="-2" attributes="0"/>
+                          <Component id="openInvoiceLbl" min="-2" pref="316" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="openInvoiceList" min="-2" pref="663" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="openInvoiceToInvoiceMenuBtn" max="32767" attributes="0"/>
+                              <Component id="openInvoiceMainMenuBtn" pref="131" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="187" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="openInvoiceLbl" min="-2" pref="101" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="openInvoiceToInvoiceMenuBtn" min="-2" pref="49" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="openInvoiceMainMenuBtn" min="-2" pref="38" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="openInvoiceList" min="-2" pref="527" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="openInvoiceLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Open Invoices"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="openInvoiceMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="mainMenuBtn"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openInvoiceMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="openInvoiceToInvoiceMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Invoice Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openInvoiceToInvoiceMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="openInvoiceList">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="closedInvoicePanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="353" max="-2" attributes="0"/>
+                          <Component id="closedInvoiceLbl" min="-2" pref="345" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="closedInvoiceList" min="-2" pref="796" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="closedInvToInvoiceMenuBtn" min="-2" pref="144" max="-2" attributes="0"/>
+                              <Component id="closedInvoiceMainMenuBtn" min="-2" pref="140" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="25" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <Component id="closedInvoiceLbl" min="-2" pref="90" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="closedInvToInvoiceMenuBtn" min="-2" pref="46" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="closedInvoiceMainMenuBtn" min="-2" pref="46" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="closedInvoiceList" min="-2" pref="622" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="closedInvoiceLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Closed Invoices"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="closedInvoiceMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closedInvoiceMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="closedInvToInvoiceMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Invoice Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closedInvToInvoiceMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="closedInvoiceList">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="productReportPanel">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="prodReportMainMenuBtn" min="-2" pref="103" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                          <Component id="productReportLbl" min="-2" pref="557" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="productReportList" min="-2" pref="801" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="207" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="productReportLbl" min="-2" pref="117" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="prodReportMainMenuBtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="productReportList" min="-2" pref="674" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="productReportLbl">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="36" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Product Report"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="prodReportMainMenuBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Main Menu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="prodReportMainMenuBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.List" name="productReportList">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="productReportListActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
