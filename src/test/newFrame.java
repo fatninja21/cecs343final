@@ -2430,6 +2430,7 @@ public void displayMainMenu(){
 		double comission = Double.parseDouble(editSlsPersonCommissionTf.getText());
 		int id = Integer.parseInt(displayCurrentSlsPersonIDLbl.getText());
 		sales.get(index).editSalesPerson(fName, lName, comission, id);
+                System.out.println("pooop");
 	}
 	
 	public void addSalesperson() {
