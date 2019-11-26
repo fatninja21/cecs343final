@@ -30,6 +30,7 @@ public final class newFrame extends javax.swing.JFrame {
         //cust.add(new Customer(2,"poop","lala", 23.5 ));
         initComponents();
         displayMainMenu();
+        System.out.println("daniels dumb");
     }
 
     /**
