@@ -185,6 +185,8 @@ public final class newFrame extends javax.swing.JFrame {
         invoiceSalesPersonNameList = new java.awt.List();
         invoiceCustomerNameList = new java.awt.List();
         productInINvoiceList = new java.awt.List();
+        quantityOfProductLbl = new javax.swing.JLabel();
+        quantityOfProductTf = new javax.swing.JTextField();
         editInvoicePanel = new javax.swing.JPanel();
         editInvoiceLbl = new javax.swing.JLabel();
         editInvoiceMainMenuBtn = new javax.swing.JButton();
@@ -1322,6 +1324,8 @@ public final class newFrame extends javax.swing.JFrame {
             }
         });
 
+        quantityOfProductLbl.setText("Quantity");
+
         javax.swing.GroupLayout addInvoicePanelLayout = new javax.swing.GroupLayout(addInvoicePanel);
         addInvoicePanel.setLayout(addInvoicePanelLayout);
         addInvoicePanelLayout.setHorizontalGroup(
@@ -1340,42 +1344,46 @@ public final class newFrame extends javax.swing.JFrame {
                     .addGroup(addInvoicePanelLayout.createSequentialGroup()
                         .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(addInvoicePanelLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(addProdToInvBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(addInvoicePanelLayout.createSequentialGroup()
                                 .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(addInvoicePanelLayout.createSequentialGroup()
                                         .addGap(59, 59, 59)
                                         .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(addInvoiceIDTf, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(addSlsPersonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(addInvoiceIDLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(addCustToInvLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(78, 78, 78))
+                                            .addComponent(addInvoiceIDLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                     .addGroup(addInvoicePanelLayout.createSequentialGroup()
                                         .addGap(11, 11, 11)
-                                        .addComponent(invoiceSalesPersonNameList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(31, 31, 31)
-                                        .addComponent(invoiceCustomerNameList, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(92, 92, 92))
-                                    .addGroup(addInvoicePanelLayout.createSequentialGroup()
-                                        .addComponent(totalProductsInInvoiceTf, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(49, 49, 49)
                                         .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(invoiceTotalLbl)
-                                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(cancelAddInvoiceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                            .addGroup(addInvoicePanelLayout.createSequentialGroup()
+                                                .addComponent(addSlsPersonLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(193, 193, 193)
+                                                .addComponent(addCustToInvLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(addInvoicePanelLayout.createSequentialGroup()
+                                                .addComponent(invoiceSalesPersonNameList, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(79, 79, 79)
+                                                .addComponent(invoiceCustomerNameList, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                                 .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(productInINvoiceList, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(addInvoicePanelLayout.createSequentialGroup()
-                                        .addGap(88, 88, 88)
-                                        .addComponent(addProdLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(addInvoicePanelLayout.createSequentialGroup()
-                                        .addGap(16, 16, 16)
-                                        .addComponent(submitAddInvoiceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addContainerGap(20, Short.MAX_VALUE))))
+                                    .addComponent(addProdLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(addInvoicePanelLayout.createSequentialGroup()
+                                .addComponent(totalProductsInInvoiceTf, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(49, 49, 49)
+                                .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(invoiceTotalLbl)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cancelAddInvoiceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                                .addComponent(submitAddInvoiceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(addInvoicePanelLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(quantityOfProductLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(addInvoicePanelLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(quantityOfProductTf)
+                                    .addComponent(addProdToInvBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE))))
+                        .addContainerGap(21, Short.MAX_VALUE))))
         );
         addInvoicePanelLayout.setVerticalGroup(
             addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1397,15 +1405,18 @@ public final class newFrame extends javax.swing.JFrame {
                 .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addSlsPersonLbl)
                     .addComponent(addCustToInvLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addProdLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(addProdLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(quantityOfProductLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(productInINvoiceList, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(invoiceCustomerNameList, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(invoiceSalesPersonNameList, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(addProdToInvBtn)
-                .addGap(51, 51, 51)
+                    .addComponent(invoiceSalesPersonNameList, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(addInvoicePanelLayout.createSequentialGroup()
+                        .addComponent(quantityOfProductTf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(addProdToInvBtn)))
+                .addGap(82, 82, 82)
                 .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(addInvoicePanelLayout.createSequentialGroup()
                         .addComponent(totalProductsInInvoiceTf, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1418,7 +1429,7 @@ public final class newFrame extends javax.swing.JFrame {
                         .addGroup(addInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cancelAddInvoiceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(submitAddInvoiceBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 303, Short.MAX_VALUE))))
         );
 
         editInvoicePanel.setBackground(new java.awt.Color(153, 255, 255));
@@ -1478,7 +1489,7 @@ public final class newFrame extends javax.swing.JFrame {
                         .addGap(27, 27, 27)
                         .addGroup(editInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(invoiceIDTf)
-                            .addComponent(editInvoiceMainMenuBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 108, Short.MAX_VALUE)
+                            .addComponent(editInvoiceMainMenuBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
                             .addComponent(invoiceIDLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(editInvoicePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(editInvoicePanelLayout.createSequentialGroup()
@@ -2360,6 +2371,8 @@ public final class newFrame extends javax.swing.JFrame {
     private java.awt.List productReportList;
     private javax.swing.JPanel productReportPanel;
     private java.awt.List qtyBelowLimitList;
+    private javax.swing.JLabel quantityOfProductLbl;
+    private javax.swing.JTextField quantityOfProductTf;
     private javax.swing.JButton removeCustomerBtn;
     private javax.swing.JButton removeInventoryBtn;
     private javax.swing.JButton removeInvoiceBtn;

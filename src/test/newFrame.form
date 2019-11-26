@@ -1658,54 +1658,62 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  <Component id="addProdToInvBtn" min="-2" pref="96" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="addInvoiceIDTf" min="-2" pref="105" max="-2" attributes="0"/>
-                                              <Component id="addSlsPersonLbl" min="-2" pref="105" max="-2" attributes="0"/>
                                               <Component id="addInvoiceIDLbl" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="addCustToInvLbl" min="-2" pref="120" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                          <Component id="invoiceSalesPersonNameList" max="32767" attributes="0"/>
-                                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="invoiceCustomerNameList" min="-2" pref="120" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="totalProductsInInvoiceTf" min="-2" pref="440" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="invoiceTotalLbl" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel11" min="-2" pref="108" max="-2" attributes="0"/>
-                                              <Component id="cancelAddInvoiceBtn" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="addSlsPersonLbl" min="-2" pref="105" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="193" max="-2" attributes="0"/>
+                                                  <Component id="addCustToInvLbl" min="-2" pref="120" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="invoiceSalesPersonNameList" min="-2" pref="194" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                                                  <Component id="invoiceCustomerNameList" min="-2" pref="188" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <EmptySpace pref="36" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="productInINvoiceList" min="-2" pref="271" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
-                                          <Component id="addProdLbl" min="-2" pref="83" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                                          <Component id="submitAddInvoiceBtn" min="-2" pref="97" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="addProdLbl" min="-2" pref="83" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="totalProductsInInvoiceTf" min="-2" pref="440" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="invoiceTotalLbl" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel11" min="-2" pref="108" max="-2" attributes="0"/>
+                                      <Component id="cancelAddInvoiceBtn" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="85" max="32767" attributes="0"/>
+                                  <Component id="submitAddInvoiceBtn" min="-2" pref="97" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Component id="quantityOfProductLbl" min="-2" pref="62" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="quantityOfProductTf" max="32767" attributes="0"/>
+                                      <Component id="addProdToInvBtn" pref="90" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="20" max="32767" attributes="0"/>
+                          <EmptySpace pref="21" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -1736,16 +1744,20 @@
                       <Component id="addSlsPersonLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="addCustToInvLbl" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                       <Component id="addProdLbl" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="quantityOfProductLbl" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="productInINvoiceList" min="-2" pref="129" max="-2" attributes="0"/>
                       <Component id="invoiceCustomerNameList" min="-2" pref="129" max="-2" attributes="0"/>
                       <Component id="invoiceSalesPersonNameList" min="-2" pref="129" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="quantityOfProductTf" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="addProdToInvBtn" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="addProdToInvBtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Component id="totalProductsInInvoiceTf" min="-2" pref="196" max="-2" attributes="0"/>
@@ -1760,7 +1772,7 @@
                               <Component id="cancelAddInvoiceBtn" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                               <Component id="submitAddInvoiceBtn" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="303" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -1855,6 +1867,13 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="productInINvoiceListActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="quantityOfProductLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Quantity"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="quantityOfProductTf">
         </Component>
       </SubComponents>
     </Container>
