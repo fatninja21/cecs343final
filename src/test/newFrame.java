@@ -34,6 +34,7 @@ public final class newFrame extends javax.swing.JFrame {
             System.out.println("daniels dumb");
                 System.out.println("daniels dumb");
                     System.out.println("daniels dumb");
+                      System.out.println("daniels dumb");
     }
 
     /**
