@@ -20,9 +20,10 @@ public final class newFrame extends javax.swing.JFrame {
     ArrayList<Salesperson> sales = new ArrayList<Salesperson>();
     ArrayList<Invoice> inv = new ArrayList<Invoice>();
     ArrayList<Product> prods = new ArrayList<Product>();
-    ArrayList<Inventory> Inventory = new ArrayList<Inventory>();
+   // ArrayList<Inventory> inventory = new ArrayList<Inventory>();
     ArrayList<Product> selectedProduct = new ArrayList<Product>();
-
+    Inventory invent = new Inventory();
+    
         
     /**
      * Creates new form newFrame
@@ -31,8 +32,6 @@ public final class newFrame extends javax.swing.JFrame {
         //cust.add(new Customer(2,"poop","lala", 23.5 ));
         initComponents();
         displayMainMenu();
-        System.out.println("daniels dumb2.0");
-        System.out.println("test test test");
     }
 
     /**
@@ -2041,8 +2040,10 @@ public final class newFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         addSalesperson();
         salesPersonList.clear();
+        invoiceSalesPersonNameList.clear();
         for (int i = 0; i < sales.size(); i++) {
                 salesPersonList.add(sales.get(i).getSalesID()+"    "+ sales.get(i).getFirstName()+"    "+ sales.get(i).getLastName()+"    "+  sales.get(i).getComissionRate());
+                invoiceSalesPersonNameList.add(sales.get(i).getSalesID()+"     "+ sales.get(i).getFirstName()+"       "+ sales.get(i).getLastName()+"    ");
         }
         repaint();
         displayMainMenu();
@@ -2060,8 +2061,10 @@ public final class newFrame extends javax.swing.JFrame {
 
        editSalesPerson(currentSalesIndex);	
        salesPersonList.clear();
+       invoiceSalesPersonNameList.clear();
         for (int i = 0; i < sales.size(); i++) {
                 salesPersonList.add(sales.get(i).getSalesID()+"    "+ sales.get(i).getFirstName()+"    "+ sales.get(i).getLastName()+"    "+  sales.get(i).getComissionRate());
+                invoiceSalesPersonNameList.add(sales.get(i).getSalesID()+"    "+ sales.get(i).getFirstName()+"    "+ sales.get(i).getLastName());
         }
         repaint(); 
         displayMainMenu();
@@ -2077,8 +2080,11 @@ public final class newFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         addProduct();
         inventoryList.clear();
+        productInINvoiceList.clear();
         for (int i = 0; i < prods.size(); i++) {
+
                 inventoryList.add(prods.get(i).getName()+"    "+ prods.get(i).getQuantity()+"    "+ prods.get(i).getCost()+"    "+  prods.get(i).getSalePrice());
+                productInINvoiceList.add(prods.get(i).getName()+"    "+ prods.get(i).getQuantity()+"    "+ prods.get(i).getSalePrice());
         }        
         displayMainMenu();
     }//GEN-LAST:event_addProductSubmitBtnActionPerformed
@@ -2091,6 +2097,16 @@ public final class newFrame extends javax.swing.JFrame {
 
     private void cnfrmEditProdBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cnfrmEditProdBtnActionPerformed
         // TODO add your handling code here:
+        int currentProdIndex= salesPersonList.getSelectedIndex();
+
+       editSalesPerson(currentProdIndex);	
+       salesPersonList.clear();
+       invoiceSalesPersonNameList.clear();
+        for (int i = 0; i < sales.size(); i++) {
+                salesPersonList.add(sales.get(i).getSalesID()+"    "+ sales.get(i).getFirstName()+"    "+ sales.get(i).getLastName()+"    "+  sales.get(i).getComissionRate());
+                invoiceSalesPersonNameList.add(sales.get(i).getSalesID()+"    "+ sales.get(i).getFirstName()+"    "+ sales.get(i).getLastName());
+        }
+        repaint(); 
         displayMainMenu();
     }//GEN-LAST:event_cnfrmEditProdBtnActionPerformed
 
@@ -2139,6 +2155,7 @@ public final class newFrame extends javax.swing.JFrame {
 
         try {
             salesPersonList.remove(currentSalesPersonIndex);
+            invoiceSalesPersonNameList.remove(currentSalesPersonIndex);
             removeSalesperson(currentSalesPersonIndex);
             repaint();
 
@@ -2443,7 +2460,6 @@ public void displayMainMenu(){
 		double comission = Double.parseDouble(editSlsPersonCommissionTf.getText());
 		int id = Integer.parseInt(displayCurrentSlsPersonIDLbl.getText());
 		sales.get(index).editSalesPerson(fName, lName, comission, id);
-                System.out.println("pooop");
 	}
 	
 	public void addSalesperson() {
@@ -2461,6 +2477,8 @@ public void displayMainMenu(){
 		double productCost = Double.parseDouble(addProductSaleCostTf.getText());
 		double salePrice =  Double.parseDouble(addProductSalePriceTf.getText());
                 prods.add(new Product(name,quantity,productCost,salePrice));
+                invent.addProductToInventory(name, quantity, productCost, salePrice);
+          //      inventory.add(prods.get())
 		//sales.add(new Salesperson(fName,lName,comission,id));
 		//sales.add(new Salesperson("Mas","Puta", 12.2, 123));
 	}
