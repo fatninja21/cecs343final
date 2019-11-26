@@ -31,6 +31,7 @@ public final class newFrame extends javax.swing.JFrame {
         initComponents();
         displayMainMenu();
         System.out.println("daniels dumb");
+        System.out.println("test test test");
  
     }
 
