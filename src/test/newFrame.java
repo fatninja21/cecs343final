@@ -405,6 +405,11 @@ public final class newFrame extends javax.swing.JFrame {
         });
 
         removeInventoryBtn.setText("Remove Inventory");
+        removeInventoryBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeInventoryBtnActionPerformed(evt);
+            }
+        });
 
         inventoryMainMenuBtn.setText("Main Menu");
         inventoryMainMenuBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -2013,18 +2018,18 @@ public final class newFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_addInventoryBtnActionPerformed
 
     private void editInventoryBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editInventoryBtnActionPerformed
-        // TODO add your handling code here:
+         // TODO add your handling code here:
         
         int currentProductIndex= inventoryList.getSelectedIndex();
 
         try{
-        editInvProdNameDispLbl.setText(prods.get(currentProductIndex).getName());
-        addProductQtyTf.setText(String.valueOf(prods.get(currentProductIndex).getQuantity()));
-        addProductSaleCostTf.setText(String.valueOf(prods.get(currentProductIndex).getCost()));
-        addProductSalePriceTf.setText(String.valueOf(prods.get(currentProductIndex).getSalePrice()) );
-	repaint();				
-        inventoryPanel.setVisible(false);
-        editInventoryPanel.setVisible(true);
+            editInvProdNameDispLbl.setText(prods.get(currentProductIndex).getName());
+            editProdQtyTf.setText(String.valueOf(prods.get(currentProductIndex).getQuantity()));
+            editSaleCostTf.setText(String.valueOf(prods.get(currentProductIndex).getCost()));
+            editBuyCostTf.setText(String.valueOf(prods.get(currentProductIndex).getSalePrice()) );
+            repaint();                
+            inventoryPanel.setVisible(false);
+            editInventoryPanel.setVisible(true);
         }
         catch (IndexOutOfBoundsException i) {
             JOptionPane.showMessageDialog(this, "There is no product to edit");
@@ -2246,14 +2251,14 @@ public final class newFrame extends javax.swing.JFrame {
 
     private void cnfrmEditProdBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cnfrmEditProdBtnActionPerformed
         // TODO add your handling code here:
-        int currentProdIndex= salesPersonList.getSelectedIndex();
+        int currentProdIndex= inventoryList.getSelectedIndex();
 
-       editSalesPerson(currentProdIndex);	
-       salesPersonList.clear();
-       invoiceSalesPersonNameList.clear();
-        for (int i = 0; i < sales.size(); i++) {
-                salesPersonList.add(sales.get(i).getSalesID()+"    "+ sales.get(i).getFirstName()+"    "+ sales.get(i).getLastName()+"    "+  sales.get(i).getComissionRate());
-                invoiceSalesPersonNameList.add(sales.get(i).getSalesID()+"    "+ sales.get(i).getFirstName()+"    "+ sales.get(i).getLastName());
+       editProduct(currentProdIndex);    
+       inventoryList.clear();
+       productInINvoiceList.clear();
+        for (int i = 0; i < prods.size(); i++) {
+                inventoryList.add(prods.get(i).getName()+"    "+ prods.get(i).getQuantity()+"    "+ prods.get(i).getCost()+"    "+  prods.get(i).getSalePrice());
+                productInINvoiceList.add(prods.get(i).getName()+"    "+ prods.get(i).getQuantity()+"    "+prods.get(i).getSalePrice());
         }
         repaint(); 
         displayMainMenu();
@@ -2344,6 +2349,22 @@ public final class newFrame extends javax.swing.JFrame {
     private void productInINvoiceListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productInINvoiceListActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_productInINvoiceListActionPerformed
+
+    private void removeInventoryBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeInventoryBtnActionPerformed
+        // TODO add your handling code here:
+        int currentProdIndex= inventoryList.getSelectedIndex();
+
+        try {
+            inventoryList.remove(currentProdIndex);
+            productInINvoiceList.remove(currentProdIndex);
+            removeCustomer(currentProdIndex);
+            repaint();
+
+        } catch (ArrayIndexOutOfBoundsException ab) {
+                JOptionPane.showMessageDialog(this, "There is no prod to Delete");
+        }
+  
+    }//GEN-LAST:event_removeInventoryBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2647,11 +2668,11 @@ public void displayMainMenu(){
 
 	}
         public void editProduct(int index) {
-            String prodName = editSlsPersonFNameTf.getText();
-            String lName =editSlsPersonLNameTf.getText();
-            double comission = Double.parseDouble(editSlsPersonCommissionTf.getText());
-            int id = Integer.parseInt(displayCurrentSlsPersonIDLbl.getText());
-            sales.get(index).editSalesPerson(fName, lName, comission, id);
-	}       
+            String prodName = editInvProdNameDispLbl.getText();
+            int qty = Integer.parseInt(editProdQtyTf.getText());
+            double prodCost = Double.parseDouble(editBuyCostTf.getText());
+            double salePrice = Double.parseDouble(editSaleCostTf.getText());
+            prods.get(index).editProduct(prodName, qty, prodCost, salePrice);
+    }          
        
 }
