@@ -2421,11 +2421,13 @@ public final class newFrame extends javax.swing.JFrame {
     private void addProdToInvBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addProdToInvBtnActionPerformed
         // TODO add your handling code here:
         int productIndex = productInINvoiceList.getSelectedIndex();
-        int count;
+        int count = Integer.parseInt(quantityOfProductTf.getText());
+        
         selectedProduct.add(prods.get(productIndex));
+        totalProductsInInvoiceTf.clear();
         for(int i=0; i < selectedProduct.size();i++){
             //if item is not in list
-           totalProductsInInvoiceTf.add(selectedProduct.get(i).getName() /* +  textfield for qntSold */); 
+           totalProductsInInvoiceTf.add(selectedProduct.get(i).getName() + " " + count + " " + selectedProduct.get(i).getSalePrice()+ " " + selectedProduct.get(i).getSalePrice()*count); 
            //else 
            //totalProductsInInvoiceTf.add(selectedProduct.get(i).getName()) + count++; 
 
