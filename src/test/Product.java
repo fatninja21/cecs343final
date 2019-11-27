@@ -30,33 +30,30 @@ public class Product {
 		this.totalProfitPercent = 0;
 	}
 	
-	//Copy Constructor
-	public Product(Product toCopy){
-		this.productName = toCopy.getName();
-		this.quantity = toCopy.getQuantity();
-		this.productCost = toCopy.getCost();
-		this.salePrice = toCopy.getSalePrice();
-		this.totalCost = toCopy.getTotalCost();
-		this.quantitySold = toCopy.getQtySold();
-		this.totalSales = toCopy.getTotalSales();
-		this.totalProfit = toCopy.getTotalProfit();
-		this.totalProfitPercent = toCopy.getTotalProfitPercent();
-	}
-	
-	
-	
 	public String getName() {
 		return productName;
 	}
+        public void setName(String name){
+            this.productName =name;
+        }
 	public int getQuantity() {
 		return quantity;
 	}
+        public void setQuantity(int qty){
+            this.quantity= qty;
+        }
 	public double getCost() {
 		return productCost;
 	}
+        public void setCost(double cost){
+            this.productCost = cost;
+        }
 	public double getSalePrice() {
 		return salePrice;
 	}
+        public void setSalePrice(double Saleprice){
+            this.salePrice= Saleprice;
+        }
 	public int getQtySold(){
 		return quantitySold;
 	}
@@ -72,16 +69,12 @@ public class Product {
 	public double getTotalProfitPercent(){
 		return totalProfitPercent;
 	}
-	
-	
-		// Setters //
-	
-	public void setCost(double productCost) {
-		this.productCost = productCost;
-	}
-	public void setPrice(double salePrice) {
-		this.salePrice = salePrice;
-	}
+	public void  editProduct(String name, int qty, double prodCost,double salePrice) {	
+		this.setName(name);
+                this.setQuantity(qty);
+                this.setCost(prodCost);
+                this.setSalePrice(salePrice);      
+        }	
 	
 
 	
