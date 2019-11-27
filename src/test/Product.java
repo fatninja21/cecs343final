@@ -87,8 +87,8 @@ public class Product {
 		quantitySold += qty;
 		quantity -= qty;
 		
-		//Add to total sales
-		totalSales += (qty * salePrice);
+		////Add to total sales
+		//totalSales += (qty * salePrice);
 		
 		//Set Total Profit
 		//totalProfit = (totalSales - totalCost);
