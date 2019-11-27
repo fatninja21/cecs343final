@@ -2426,29 +2426,28 @@ public final class newFrame extends javax.swing.JFrame {
 
     private void addProdToInvBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addProdToInvBtnActionPerformed
         // TODO add your handling code here:
+        int currentCount;
         int productIndex = productInINvoiceList.getSelectedIndex();
         int count = Integer.parseInt(quantityOfProductTf.getText());
-        
-        
-        totalProductsInInvoiceTf.clear();            
+        int array2Counter = 0;
         String prodName = prods.get(productIndex).getName();
-        
-        
-        for(int i=0; i < selectedProduct.size();i++){
-            int currentQty;
-
-            String prod2Name = selectedProduct.get(i).getName();
-            if (prodName.compareTo(prod2Name) == 0){
-                //currentQty = count;
-                selectedProduct.add(prods.get(productIndex));
-                prods.get(productIndex).sellProduct(count);
-                selectedProduct.get(i).setQuantity(count);
-                totalProductsInInvoiceTf.add(selectedProduct.get(i).getName() + " " + count + " " + selectedProduct.get(i).getSalePrice()+ " " + selectedProduct.get(i).getSalePrice()*count);      
-            }else{
-                currentQty =selectedProduct.get(i).getQuantity();
-
-                selectedProduct.get(i).setQuantity( currentQty + count);
+        if ( selectedProduct.isEmpty()){
+           selectedProduct.add(prods.get(productIndex));
+           selectedProduct.get(0).setQuantity(count);
+        }else{
+            for( int i=0; i<prods.size();i++){
+                for(int j=0 ; j<selectedProduct.size();j++){
+                    if( selectedProduct.get(j).getName().compareTo(prodName) ==0 ){
+                        
+                    }
+                    
+                }
             }
+
+        }
+        totalProductsInInvoiceTf.clear();            
+        for(int i=0; i < selectedProduct.size();i++){
+            totalProductsInInvoiceTf.add(selectedProduct.get(i).getName() + " " + count + " " + selectedProduct.get(i).getSalePrice()+ " " + selectedProduct.get(i).getSalePrice()*count);      
         }
         quantityOfProductTf.setText("1");
         repaint();
