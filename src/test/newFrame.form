@@ -622,7 +622,7 @@
                       <Component id="editCustFNameLbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
                       <Component id="editCustLNameLbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="68" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="editCustomerLNameTf" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                       <Component id="editCustFNameTf" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
@@ -1103,7 +1103,7 @@
                       <Component id="addProductSubmitBtn" pref="37" max="32767" attributes="0"/>
                       <Component id="cancelAddProduct" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="615" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1470,7 +1470,7 @@
                           <Component id="customerList" min="-2" pref="502" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="491" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1626,7 +1626,7 @@
                       </Group>
                       <Component id="invoiceList" min="-2" pref="518" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="500" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1810,24 +1810,25 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="invoiceTotalLbl" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="shipChargeLbl" alignment="0" pref="95" max="32767" attributes="0"/>
+                                              </Group>
                                               <Component id="jLabel32" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                  <Component id="submitAddInvoiceBtn" min="-2" pref="97" max="-2" attributes="0"/>
+                                                  <Component id="totalBalanceLbl" min="-2" pref="108" max="-2" attributes="0"/>
+                                              </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                      <Component id="invoiceTotalLbl" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="shipChargeLbl" alignment="0" pref="95" max="32767" attributes="0"/>
+                                                      <Component id="totalPerProdLbl" alignment="0" pref="92" max="32767" attributes="0"/>
+                                                      <Component id="shipChargeTf" alignment="0" max="32767" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="shipChargeTf" min="-2" pref="92" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                                                          <Component id="jButton1" min="-2" pref="102" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                                          <Component id="submitAddInvoiceBtn" min="-2" pref="97" max="-2" attributes="0"/>
-                                                          <Component id="jLabel11" min="-2" pref="108" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
+                                                  <Component id="updateTotalShippingBtn" min="-2" pref="102" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -1920,24 +1921,27 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                          <Component id="jLabel32" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="totalPerProdLbl" pref="25" max="32767" attributes="0"/>
+                              <Component id="jLabel32" max="32767" attributes="0"/>
+                          </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="shipChargeLbl" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                               <Component id="shipChargeTf" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jButton1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                              <Component id="updateTotalShippingBtn" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="invoiceTotalLbl" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                              <Component id="jLabel11" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="totalBalanceLbl" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="cancelAddInvoiceBtn" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                               <Component id="submitAddInvoiceBtn" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="0" pref="288" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="288" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -2004,7 +2008,7 @@
             <Property name="text" type="java.lang.String" value="Total Balance"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel11">
+        <Component class="javax.swing.JLabel" name="totalBalanceLbl">
           <Properties>
             <Property name="text" type="java.lang.String" value="total here"/>
           </Properties>
@@ -2103,9 +2107,14 @@
             <Property name="text" type="java.lang.String" value="Total"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="updateTotalShippingBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Update Total"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="totalPerProdLbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="total here"/>
           </Properties>
         </Component>
       </SubComponents>
