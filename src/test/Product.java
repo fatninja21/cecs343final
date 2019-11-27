@@ -44,7 +44,6 @@ public class Product {
 	}
 	
 	
-		// Getters //
 	
 	public String getName() {
 		return productName;
