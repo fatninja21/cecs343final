@@ -5,40 +5,34 @@ import java.util.ArrayList;
 import java.util.List;
 import java.lang.Math;
 import java.text.DecimalFormat; 
+import java.util.Arrays;
+
+
 
 public class Inventory {
 
 	private ArrayList<Product> currentInventory;
 	
 	//Default Constructor
-	public Inventory(){
-		currentInventory = new ArrayList<Product>();
+	public Inventory(ArrayList<Product> prod){
+		currentInventory = prod;
 	}
-	//Loaded Constructor
-	public Inventory(ArrayList<Product> copyInventory){
-		currentInventory = copyInventory(copyInventory);
-	}
-	
-	
-	//Makes deep copy of Inventory
-	public static ArrayList<Product> copyInventory(ArrayList<Product> toCopy){
-		ArrayList<Product> copy = new ArrayList<Product>();
-		for (Product item : toCopy){
-			copy.add(new Product(item));
-		}
-		return copy;
-	}
+
+            public ArrayList<Product> displayProducts() {
+                ArrayList<Product> list = new ArrayList<>();
+                 for (int i = 0; i < currentInventory.size(); i++) {
+                    list.add(new Product(currentInventory.get(i).getName(),currentInventory.get(i).getQuantity(), currentInventory.get(i).getSalePrice(),
+                            currentInventory.get(i).getCost()));
+                }
+                return list;
+            }
 	
 	//Getter
-	public ArrayList<Product> getInventory(){
-		return currentInventory;
-	}
 	
-	// Add product to inventory list
-	public void addProductToInventory(String productName, int quantity, double productCost, double salePrice) {
-		currentInventory.add(new Product(productName, quantity, productCost, salePrice));
-	}
 	
+	
+
+/*	
 	//Edit a product - But not name or qty
 	public void editProductInInventory(Product productToEdit, double newProdCost, double newSalePrice) {
 		//Set new product values
@@ -46,7 +40,8 @@ public class Inventory {
 		productToEdit.setPrice(newSalePrice);
 
 	}
-	
+        
+     
 
 		// INPUT CHECKS //
 	
@@ -188,4 +183,5 @@ public class Inventory {
 		}
 		return invToSort;
 	}
+*/
 }
