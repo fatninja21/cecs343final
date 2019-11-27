@@ -22,7 +22,7 @@ public final class newFrame extends javax.swing.JFrame {
     ArrayList<Product> prods = new ArrayList<Product>();
    // ArrayList<Inventory> inventory = new ArrayList<Inventory>();
     ArrayList<Product> selectedProduct = new ArrayList<Product>();
-    Inventory invent = new Inventory();
+    Inventory invent = new Inventory(prods);
     
         
     /**
@@ -32,6 +32,7 @@ public final class newFrame extends javax.swing.JFrame {
         //cust.add(new Customer(2,"poop","lala", 23.5 ));
         initComponents();
         displayMainMenu();
+
     }
 
     /**
@@ -157,6 +158,10 @@ public final class newFrame extends javax.swing.JFrame {
         customerMenuLbl = new javax.swing.JLabel();
         custMainMenuBtn = new javax.swing.JButton();
         customerList = new java.awt.List();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         invoicePanel = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         addInvoiceBtn = new javax.swing.JButton();
@@ -1141,6 +1146,14 @@ public final class newFrame extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setText("First Name");
+
+        jLabel4.setText("Cust ID");
+
+        jLabel5.setText("Last Name");
+
+        jLabel6.setText("Sales Tax");
+
         javax.swing.GroupLayout CustomerPanelLayout = new javax.swing.GroupLayout(CustomerPanel);
         CustomerPanel.setLayout(CustomerPanelLayout);
         CustomerPanelLayout.setHorizontalGroup(
@@ -1149,23 +1162,39 @@ public final class newFrame extends javax.swing.JFrame {
                 .addGroup(CustomerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CustomerPanelLayout.createSequentialGroup()
                         .addGap(62, 62, 62)
-                        .addComponent(customerList, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(59, 59, 59)
-                        .addGroup(CustomerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(addCustomerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(editCustomerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(removeCustomerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
-                            .addComponent(custMainMenuBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(CustomerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(CustomerPanelLayout.createSequentialGroup()
+                                .addComponent(customerList, javax.swing.GroupLayout.PREFERRED_SIZE, 660, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(59, 59, 59)
+                                .addGroup(CustomerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(addCustomerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(editCustomerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(removeCustomerBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                                    .addComponent(custMainMenuBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(CustomerPanelLayout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(76, 76, 76)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(97, 97, 97)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(96, 96, 96)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(CustomerPanelLayout.createSequentialGroup()
-                        .addGap(318, 318, 318)
+                        .addGap(267, 267, 267)
                         .addComponent(customerMenuLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 387, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
         CustomerPanelLayout.setVerticalGroup(
             CustomerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CustomerPanelLayout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(customerMenuLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addComponent(customerMenuLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addGroup(CustomerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6))
                 .addGroup(CustomerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CustomerPanelLayout.createSequentialGroup()
                         .addGap(38, 38, 38)
@@ -1179,7 +1208,7 @@ public final class newFrame extends javax.swing.JFrame {
                     .addGroup(CustomerPanelLayout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(customerList, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(491, Short.MAX_VALUE))
         );
 
         invoicePanel.setBackground(new java.awt.Color(153, 255, 255));
@@ -1698,7 +1727,7 @@ public final class newFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(mainMenuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 857, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addComponent(CustomerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(addCustomerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2001,8 +2030,14 @@ public final class newFrame extends javax.swing.JFrame {
         customerList.clear();
         invoiceCustomerNameList.clear();
         for (int i = 0; i < cust.size(); i++) {
-                customerList.add(cust.get(i).getCustID()+"    "+ cust.get(i).getFirstName()+"    "+ cust.get(i).getLastName()+"    "+  cust.get(i).getSalesTax());
-                invoiceCustomerNameList.add(cust.get(i).getCustID()+"    "+ cust.get(i).getFirstName()+"    "+ cust.get(i).getLastName()+"    "+  cust.get(i).getSalesTax());
+                customerList.add(cust.get(i).getCustID()+"                                 "
+                        + "      "+ cust.get(i).getLastName()+"                       "
+                                + "                       "+ cust.get(i).getFirstName()+"                   "
+                                        + "                           "+  cust.get(i).getSalesTax());
+                
+                
+                invoiceCustomerNameList.add(cust.get(i).getCustID()+"        "+ cust.get(i).getFirstName()+"                "+ cust.get(i).getLastName()+"      "
+                        + "                    "+  cust.get(i).getSalesTax());
         }   
         repaint();
         displayMainMenu();
@@ -2371,6 +2406,10 @@ public final class newFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JLabel mainMenuLbl;
@@ -2477,10 +2516,7 @@ public void displayMainMenu(){
 		double productCost = Double.parseDouble(addProductSaleCostTf.getText());
 		double salePrice =  Double.parseDouble(addProductSalePriceTf.getText());
                 prods.add(new Product(name,quantity,productCost,salePrice));
-                invent.addProductToInventory(name, quantity, productCost, salePrice);
-          //      inventory.add(prods.get())
-		//sales.add(new Salesperson(fName,lName,comission,id));
-		//sales.add(new Salesperson("Mas","Puta", 12.2, 123));
+
 	}
                 
                 
