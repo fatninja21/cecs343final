@@ -2434,8 +2434,8 @@ public final class newFrame extends javax.swing.JFrame {
            totalProductsInInvoiceTf.add(selectedProduct.get(i).getName() /* +  textfield for qntSold */); 
            //else 
            //totalProductsInInvoiceTf.add(selectedProduct.get(i).getName()) + count++; 
-
         }
+        quantityOfProductTf.setText("1");
        
     }//GEN-LAST:event_addProdToInvBtnActionPerformed
 
@@ -2445,12 +2445,12 @@ public final class newFrame extends javax.swing.JFrame {
 
     private void removeInventoryBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeInventoryBtnActionPerformed
         // TODO add your handling code here:
-        int currentProdIndex= inventoryList.getSelectedIndex();
 
         try {
+            int currentProdIndex= inventoryList.getSelectedIndex();
             inventoryList.remove(currentProdIndex);
             productInINvoiceList.remove(currentProdIndex);
-            removeCustomer(currentProdIndex);
+            removeProduct(currentProdIndex);
             repaint();
 
         } catch (ArrayIndexOutOfBoundsException ab) {
@@ -2787,5 +2787,7 @@ public void displayMainMenu(){
             double salePrice = Double.parseDouble(editSaleCostTf.getText());
             prods.get(index).editProduct(prodName, qty, prodCost, salePrice);
     }          
-       
+        public void removeProduct(int index) {
+            prods.remove(index);
+	}
 }
