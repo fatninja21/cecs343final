@@ -2429,15 +2429,29 @@ public final class newFrame extends javax.swing.JFrame {
         int productIndex = productInINvoiceList.getSelectedIndex();
         int count = Integer.parseInt(quantityOfProductTf.getText());
         
-        selectedProduct.add(prods.get(productIndex));
-        totalProductsInInvoiceTf.clear();
+        
+        totalProductsInInvoiceTf.clear();            
+        String prodName = prods.get(productIndex).getName();
+        
+        
         for(int i=0; i < selectedProduct.size();i++){
-            //if item is not in list
-           totalProductsInInvoiceTf.add(selectedProduct.get(i).getName() + " " + count + " " + selectedProduct.get(i).getSalePrice()+ " " + selectedProduct.get(i).getSalePrice()*count); 
-           //else 
-           //totalProductsInInvoiceTf.add(selectedProduct.get(i).getName()) + count++; 
+            int currentQty;
+
+            String prod2Name = selectedProduct.get(i).getName();
+            if (prodName.compareTo(prod2Name) == 0){
+                //currentQty = count;
+                selectedProduct.add(prods.get(productIndex));
+                prods.get(productIndex).sellProduct(count);
+                selectedProduct.get(i).setQuantity(count);
+                totalProductsInInvoiceTf.add(selectedProduct.get(i).getName() + " " + count + " " + selectedProduct.get(i).getSalePrice()+ " " + selectedProduct.get(i).getSalePrice()*count);      
+            }else{
+                currentQty =selectedProduct.get(i).getQuantity();
+
+                selectedProduct.get(i).setQuantity( currentQty + count);
+            }
         }
         quantityOfProductTf.setText("1");
+        repaint();
        
     }//GEN-LAST:event_addProdToInvBtnActionPerformed
 
