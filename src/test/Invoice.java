@@ -5,22 +5,29 @@ import java.util.ArrayList;
 public class Invoice {
 	private int invoiceID;
 	private String address;
-	public Customer cust;
-	public Salesperson sales;
+	//public Customer cust;
+	//public Salesperson sales;
+        private String custName;
+        private String salesPersonName;
 	private ArrayList<Product> products;
 	private Boolean isOpen;
 	private Double totalCost;
+        private Double currentBalance;
+        private Double totalBalance;
+        
 	
 	
 	//Load in ID, Salesperson, Customer, ArrayList of Products, cost per product
-	public Invoice(int invID, Salesperson sp, Customer c, ArrayList<Product> products, double cost, String address) {
+	public Invoice(int invID, String spName, String cust, ArrayList<Product> products, double cost,double balance, String address) {
 		invoiceID = invID;
-		sales = sp;
-		cust = c;
+                custName= cust;
+                salesPersonName = spName;
 		this.products = products;
 		totalCost = cost;
+                currentBalance = balance;
 		this.address = address;
 		isOpen = true;
+                totalBalance = balance;
 	}
 	
 	//public void addProduct(Product p) {
@@ -30,11 +37,11 @@ public class Invoice {
 	//	products.remove(p);
 	//}
 	
-	public Customer getCustomer() {
-		return cust;
+	public String getCustomer() {
+		return custName;
 	}
-	public Salesperson getSalesperson() {
-		return sales;
+	public String getSalesperson() {
+		return salesPersonName;
 	}
 	public int getInvoiceID() {
 		return invoiceID;
@@ -51,8 +58,13 @@ public class Invoice {
 	public void setCost(double c) {
 		this.totalCost = c;
 	}
+        public Double getCurrentBalance(){
+            return currentBalance;
+        }
 	
-	
+        public void setCurrentBalance(double payment){
+            currentBalance -= payment;
+        }
 	public void setStatus(Boolean b) {
 		this.isOpen = b;
 	}
