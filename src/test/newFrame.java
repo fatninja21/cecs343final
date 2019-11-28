@@ -31,7 +31,7 @@ public final class newFrame extends javax.swing.JFrame {
         //cust.add(new Customer(2,"poop","lala", 23.5 ));
         initComponents();
         displayMainMenu();
-
+        
     }
 
     /**
@@ -2431,18 +2431,33 @@ public final class newFrame extends javax.swing.JFrame {
         double prodCost= prods.get(productIndex).getCost();
         double prodSalePrice = prods.get(productIndex).getSalePrice();
         //selectedProduct.equals(prods.get(productIndex));
+        
+        boolean wasEntered= false;
         for(int i=0; i<selectedProduct.size();i++){
             if(selectedProduct.get(i).equals(prods.get(productIndex))){
+                double total = prodQty * prodSalePrice;
                 int addedQty = selectedProduct.get(i).getQuantity() + prodQty;
                 selectedProduct.get(i).setQuantity(addedQty);
+                selectedProduct.get(i).setTotalProfit(total);
+                prods.get(productIndex).sellProduct(prodQty);
+                wasEntered = true;
                 break;
             }
         }
-        selectedProduct.add(new Product(prodName,prodQty,prodCost,prodSalePrice));
+        if(wasEntered == true){
+            //do nothing
+        }else{
+            selectedProduct.add(new Product(prodName,prodQty,prodCost,prodSalePrice));
+            wasEntered = false;
+        }
+
         totalProductsInInvoiceTf.clear();
         for(int i=0; i<selectedProduct.size(); i++){
-        
-            totalProductsInInvoiceTf.add(selectedProduct.get(i).getName()+"           "+  selectedProduct.get(i).getQuantity()+"        " + selectedProduct.get(i).getSalePrice() );
+            totalProductsInInvoiceTf.add(selectedProduct.get(i).getName()+"           "+  selectedProduct.get(i).getQuantity()+"        " + selectedProduct.get(i).getSalePrice() + "  " + selectedProduct.get(i).getTotalSaleCost() );
+        }
+       productInINvoiceList.clear();
+        for ( int i=0; i<prods.size(); i++){
+            productInINvoiceList.add(prods.get(i).getName()+"    "+ prods.get(i).getQuantity()+"    "+ prods.get(i).getSalePrice());
         }
         repaint();
         
