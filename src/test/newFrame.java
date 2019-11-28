@@ -2448,6 +2448,7 @@ public final class newFrame extends javax.swing.JFrame {
             //do nothing
         }else{
             selectedProduct.add(new Product(prodName,prodQty,prodCost,prodSalePrice));
+            prods.get(productIndex).sellProduct(prodQty);
             wasEntered = false;
         }
 
