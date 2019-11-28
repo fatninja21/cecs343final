@@ -23,7 +23,7 @@ public class Product {
 		this.quantity = quantity;
 		this.productCost = productCost;
 		this.salePrice = salePrice;
-		this.totalCost = (quantity * productCost);
+		this.totalCost = (quantity * salePrice);
 		this.quantitySold = 0;
 		this.totalSales = 0.0;
 		this.totalProfit = 0;
@@ -60,15 +60,20 @@ public class Product {
 	public double getTotalSales(){
 		return totalSales;
 	}
-	public double getTotalCost(){
+	public double getTotalSaleCost(){
 		return totalCost;
 	}
 	public double getTotalProfit(){
 		return totalProfit;
 	}
-	public double getTotalProfitPercent(){
-		return totalProfitPercent;
-	}
+        public void setTotalProfit( double total){
+            this.totalCost+=total;
+            
+        }
+//	public double getTotalProfitPercent(){
+//		return totalProfitPercent;
+//	}
+        
 	public void  editProduct(String name, int qty, double prodCost,double salePrice) {	
 		this.setName(name);
                 this.setQuantity(qty);
