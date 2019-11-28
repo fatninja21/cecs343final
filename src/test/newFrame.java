@@ -2815,6 +2815,4 @@ public void displayMainMenu(){
         public void removeProduct(int index) {
             prods.remove(index);
 	}
-        
-        /* hi */
 }
