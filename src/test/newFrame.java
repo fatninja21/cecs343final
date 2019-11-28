@@ -21,9 +21,8 @@ public final class newFrame extends javax.swing.JFrame {
     ArrayList<Invoice> inv = new ArrayList<Invoice>();
     ArrayList<Product> prods = new ArrayList<Product>();
    // ArrayList<Inventory> inventory = new ArrayList<Inventory>();
-    ArrayList<Product> selectedProduct = new ArrayList<Product>();
     Inventory invent = new Inventory(prods);
-    
+    ArrayList<Product> selectedProduct = new ArrayList<Product>();  
         
     /**
      * Creates new form newFrame
@@ -2426,32 +2425,28 @@ public final class newFrame extends javax.swing.JFrame {
 
     private void addProdToInvBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addProdToInvBtnActionPerformed
         // TODO add your handling code here:
-        int currentCount;
         int productIndex = productInINvoiceList.getSelectedIndex();
-        int count = Integer.parseInt(quantityOfProductTf.getText());
-        int array2Counter = 0;
-        String prodName = prods.get(productIndex).getName();
-        if ( selectedProduct.isEmpty()){
-           selectedProduct.add(prods.get(productIndex));
-           selectedProduct.get(0).setQuantity(count);
-        }else{
-            for( int i=0; i<prods.size();i++){
-                for(int j=0 ; j<selectedProduct.size();j++){
-                    if( selectedProduct.get(j).getName().compareTo(prodName) ==0 ){
-                        
-                    }
-                    
-                }
+        String prodName= prods.get(productIndex).getName();
+        int prodQty= Integer.parseInt(quantityOfProductTf.getText());
+        double prodCost= prods.get(productIndex).getCost();
+        double prodSalePrice = prods.get(productIndex).getSalePrice();
+        //selectedProduct.equals(prods.get(productIndex));
+        for(int i=0; i<selectedProduct.size();i++){
+            if(selectedProduct.get(i).equals(prods.get(productIndex))){
+                int addedQty = selectedProduct.get(i).getQuantity() + prodQty;
+                selectedProduct.get(i).setQuantity(addedQty);
+                break;
             }
-
         }
-        totalProductsInInvoiceTf.clear();            
-        for(int i=0; i < selectedProduct.size();i++){
-            totalProductsInInvoiceTf.add(selectedProduct.get(i).getName() + " " + count + " " + selectedProduct.get(i).getSalePrice()+ " " + selectedProduct.get(i).getSalePrice()*count);      
+        selectedProduct.add(new Product(prodName,prodQty,prodCost,prodSalePrice));
+        totalProductsInInvoiceTf.clear();
+        for(int i=0; i<selectedProduct.size(); i++){
+        
+            totalProductsInInvoiceTf.add(selectedProduct.get(i).getName()+"           "+  selectedProduct.get(i).getQuantity()+"        " + selectedProduct.get(i).getSalePrice() );
         }
-        quantityOfProductTf.setText("1");
         repaint();
-       
+        
+        
     }//GEN-LAST:event_addProdToInvBtnActionPerformed
 
     private void productInINvoiceListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productInINvoiceListActionPerformed
