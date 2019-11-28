@@ -76,6 +76,26 @@ public class Product {
                 this.setSalePrice(salePrice);      
         }	
 	
+        
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) {
+                return true;
+            }
+            if (o == null || getClass() != o.getClass()) {
+                return false;
+            }
+            Product p = (Product) o;
+            return productName.equals(p.productName);
+        }
+    //}
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + productName.hashCode();
+        result = 31 * result + quantity;
+        return result;
+    }
 
 	
 	// Methods //
