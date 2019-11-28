@@ -2448,14 +2448,20 @@ public final class newFrame extends javax.swing.JFrame {
             //do nothing
         }else{
             selectedProduct.add(new Product(prodName,prodQty,prodCost,prodSalePrice));
+            prods.get(productIndex).sellProduct(prodQty);
             wasEntered = false;
         }
 
         totalProductsInInvoiceTf.clear();
+        inventoryList.clear();
+        for(int i=0;i<prods.size();i++){
+                inventoryList.add(prods.get(i).getName()+"    "+ prods.get(i).getQuantity()+"    "+ prods.get(i).getCost()+"    "+  prods.get(i).getSalePrice());            
+        }
         for(int i=0; i<selectedProduct.size(); i++){
             totalProductsInInvoiceTf.add(selectedProduct.get(i).getName()+"           "+  selectedProduct.get(i).getQuantity()+"        " + selectedProduct.get(i).getSalePrice() + "  " + selectedProduct.get(i).getTotalSaleCost() );
         }
        productInINvoiceList.clear();
+       
         for ( int i=0; i<prods.size(); i++){
             productInINvoiceList.add(prods.get(i).getName()+"    "+ prods.get(i).getQuantity()+"    "+ prods.get(i).getSalePrice());
         }
